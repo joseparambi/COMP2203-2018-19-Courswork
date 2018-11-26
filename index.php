@@ -10,14 +10,19 @@
 			<!-- header -->
 			<header>
 				<!-- title -->
+				<div class="top">
 				<div class="row">
-					<div class="col-md-3 pull-left"><img src="img/banner-left.png"></div>
+					<div class="col-md-3 pull-left"><img src="img/1_massive.jpg"></div>
 					<div class="col-md-6"><h1>Red Carpet Films</h1></div>
-					<div class="col-md-3 pull-right"><img src="img/banner-right.png"></div>
+					<div class="col-md-3 pull-right"><img src="img/1_massive.jpg"></div>
+					
+					<br></br>
+					<h2 id="motd">Selection of Movies to Entertain you for a lifetime!</h2>
+					
+				</div>
 				</div>
 				
-				<!-- motd -->
-				<h2 id="motd">Selection of Movies to Entertain you for a lifetime!</h2>
+				
 				
 			<?php include("navigation.php"); ?>
 				
@@ -25,22 +30,47 @@
 			
 			
 			<!-- main content -->
-			<main class="row">
+			<main class="carousel">
+			<div class="row">
 				
 				
-				<div class="col-md-7">
-					<p>Welcome to Boyd's Used Motors!!! We have some of the finest cars with only minor problems.</p>
-					
-					<p>We have been voted best car company in the UK by our employees 8 years running. <br/>Boyd's Used Motors has been running for over 13 years selling reliable used cars to the first person to walk in the door.</p>
-					
-					<p>We saw you coming and made a special price just for you! That's the quality service you can expect from our friendly staff.</p>
+				 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+					<div class="item active">
+					  <img src="img/1_medium.jpg" height = "50px" alt="Los Angeles">
+					</div>
+
+					<div class="item">
+					  <img src="img/1_medium.jpg" alt="Chicago">
+					</div>
+
+					<div class="item">
+					  <img src="img/1_medium.jpg" alt="New York">
+					</div>
+				  </div>
+
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				  </a>
 				</div>
-				
-				
-				
+				</div>
 			</main><!-- /main content -->
 			<?php include("footer.php"); ?>
-			<?php include("copyright.php"); ?>
+			
 			
 		</div><!-- /container -->
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
