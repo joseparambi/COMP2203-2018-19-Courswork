@@ -1,5 +1,17 @@
-COMP2203 Coursework 13/14
-================
+COMP2203 Lab 8 Build
+==========
 
-Please find the full coursework specifications and requirements at
-https://docs.google.com/document/d/1Rg6W6UWLB2Z4neuSHWTnyBDunc3_LC_ujR_YrUcLV9I/edit?usp=sharing
+Lab sheet - https://secure.ecs.soton.ac.uk/notes/comp2203/labs/COMP2203-Lab-8.pdf
+
+Database credentials
+===
+
+Copy then paste this information. Don't write it by hand.
+
+Host:			comp2203.ecs.soton.ac.uk
+
+Username:		comp2203-lab8
+
+Password:		k5j24wQ59F2TaNKF4wX2Xwbp49TTbplu25neThtIY
+
+Schema name:	comp2203-lab8
