@@ -34,8 +34,13 @@ try{
 			  <div class="col-md-4">
 			  <a href="film.php?id=<?=$film->id?>"><img src="http://comp2203.ecs.soton.ac.uk/coursework/1617/assets/posters/<?=$film->id?>_medium.jpg" height:"200" width="200" alt="First slide"></a>
 			  </div>
-			<div class="col-md-8">
+			<div class="col-md-8 ">
+			<div class="row center"">
+				<h5><b><u><?=$film->name?></u></b></h5>
+			</div>
+			<div class="row">
 				<h5><?=$film->description?></h5>
+			</div>
 			</div>
 	</div>
 	</br>		
