@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+<?php
+
+/**
+ * This code shows the head php file which has the parameters defined in order to call the classes defined in head
+ *
+ * Loads the relevant classes when the head is called upon
+ *
+ * The head defined the parameters in order to make the website responsive in itself
+ *
+ * @author Jose Parambi
+ */
+
+?>
+
+
 <html>
 	<head>
 		<title>Red Carpet Films &copy;</title>

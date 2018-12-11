@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * This code shows the genre php file which has the parameters defined in order to call the classes defined in the genre
+ *
+ * Loads the relevant classes when the genre is called upon
+ *
+ * The genre defined the parameters in order to make the website displays the genres available within the database to the user
+ *
+ * @author Jose Parambi
+ */
+
+
 require_once('includes/header.php');
 // gets the database connection
 require('includes/db.php');
@@ -7,7 +18,7 @@ require('includes/db.php');
 require('classes/genre.class.php');
 
 
-// gets the lists of genres available
+// gets the lists of genres available from the db
 
 $genres = $db->prepare("SELECT * FROM genre");
 $movies = $db->prepare("SELECT * FROM film");

@@ -3,7 +3,7 @@
 /**
  * This code shows the predispatch php file which has the parameters defined in order to call the classes
  *
- * loads the relevant classes when the autoloader is called upon
+ * Loads the relevant classes when the autoloader is called upon
  *
  *
  * @author Jose Parambi
