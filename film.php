@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * This code shows the genre class php file which has the function called films which can be called upon in order to intialise a function
+ *
+ * displays the films db when calling upon the id in reference to the function
+ *
+ * 
+ * class genre
+ *
+ * @author Jose Parambi
+ */
+
+
 require_once('includes/header.php');
 // gets the database connection
 require('includes/db.php');
@@ -86,6 +98,19 @@ require('classes/review.class.php');
 								<td><?=$review->reviewer?></td>
 								<td><?=$review->comment?></td>
 								<td><?=$review->liked?></td>
+									<?php if($review->liked)
+									{
+									?>
+									<img src="img/nut.png" />
+									
+									<?php } ?>
+									
+									<?php if(!$review->liked)
+									{
+									?>
+									<img src="img/superman.jpg" />
+									
+									<?php } ?>
 							</tr>
 						<?php endwhile; ?>
 					</tbody>

@@ -1,4 +1,17 @@
 <?php 
+
+/**
+ * This code shows the genre class php file which has the function called films which can be called upon in order to intialise a function
+ *
+ * displays the films db when calling upon the id in reference to the function
+ *
+ * 
+ * class genre
+ *
+ * @author Jose Parambi
+ */
+
+ 
 require_once('includes/predispatch.php');
 require_once('includes/header.php');
 require_once('includes/head.php');
@@ -160,20 +173,16 @@ $movies->execute();
 		</div>
 		</div>
 		
-
-		  
-		<div  class = "col-md-1"></div>
-		
 		<div class = "text">
-		<div  class = "col-md-1"></div>
+
 		
 		<h2>Random Film Generator:</h2>
 	
 		<?php $movie=$random->fetchObject("film");?>
-			<div class="content">
+			<div class="col-md-12">
 			  <img src="http://comp2203.ecs.soton.ac.uk/coursework/1617/assets/posters/<?=$movie->id?>_medium.jpg"  alt="Random slide">
 			  
-			  <div id ="Fifth">Film Name: <h3> <?=$movie->name?> </h3> </div>
+			  <div id ="Random">Film Name: <h3> <?=$movie->name?> </h3> </div>
 			  <div><h5> Film Description: <?=$movie->description?> </h5> </div>
 			  <div><h5> Film Director: <?=$movie->director?> </h5> </div>
 			  <div><h5> Film Runtime: <?=$movie->runtime?> Minutes </h5> </div>
