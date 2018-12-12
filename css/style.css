@@ -17,6 +17,10 @@ body {
   text-decoration: none;
 }
 
+
+
+
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -86,6 +90,7 @@ body {
 
 .row {
     display: flex;
+
 }
 
 body, html {
@@ -123,9 +128,25 @@ p{
 	font-size: 30px;
 	
 }
+
+
+tr{
 	
+color:white;
+text-decoration:bold;
+
+}
+
+
+
+th{
+	
+color:white;	
+text-decoration:bold;
 	
 }
+	
+	
 
 
 content {
@@ -184,6 +205,7 @@ h5{
 
 color:white;
 text-align: center;
+text-decoration:bold;
 
 }
 
@@ -328,6 +350,29 @@ body {margin:0;height:2000px;}
 }
 
 
+.carousel-control-prev-icon , .carousel-control-next-icon{
+	
+	height: 50px;
+	width: 50px;
+	outline: black;
+	background-color: red;
+	background-size: 50% , 50%;
+	border-radius: 25%;
+	border: 1px solid white;
+	
+}
+
+button{
+	text-decoration:bold;
+	height: 50px;
+	width: 400px;
+	outline: black;
+	background-color: red;
+	background-size: 50% , 50%;
+	border-radius: 25%;s
+	border: 1px solid black;
+  
+}
 
 
 

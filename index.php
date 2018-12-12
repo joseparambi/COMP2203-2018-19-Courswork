@@ -1,12 +1,12 @@
 <?php 
 
 /**
- * This code shows the genre class php file which has the function called films which can be called upon in order to intialise a function
+ * This code shows the index php file which has the main parts of the website in the index page in order to run the site
  *
- * displays the films db when calling upon the id in reference to the function
+ * displays the index when the relevant functions are called upon
  *
  * 
- * class genre
+ * class index
  *
  * @author Jose Parambi
  */
@@ -129,9 +129,6 @@ $movies->execute();
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
-
-			 
-			 
 			  
 			</div>
 			
@@ -153,26 +150,30 @@ $movies->execute();
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
 
-			 
-			 
-			 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		  </a>
-			 
-			  
+	
 			</div>
 
 		  </div>
-
 		  
 		</div>
+			
+			
 		</div>
 		
+		
+			 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+		
+		  
+	
+			 
+			 
 		<div class = "text">
 
 		
@@ -193,9 +194,16 @@ $movies->execute();
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star "></span>
-
 			  
 			</div>
+			
+			<button onclick="myFunction()">Generate New Movie</button>
+
+			<script>
+			function myFunction() {
+				location.reload();
+			}
+			</script>
 	
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>

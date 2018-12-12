@@ -1,12 +1,11 @@
 <?php
 
 /**
- * This code shows the genre class php file which has the function called films which can be called upon in order to intialise a function
+ * This code shows the film php file which has the function called films which can be called upon in order to intialise a function
  *
- * displays the films db when calling upon the id in reference to the function
+ * displays the lists of films in the db when calling upon the id in reference to the function
  *
- * 
- * class genre
+ * class films
  *
  * @author Jose Parambi
  */
@@ -35,19 +34,22 @@ require('classes/review.class.php');
 	
 	try{
 		// check that the ID exists and it is the correct type
+		// implement parts from previous labs and adapted this in order to help me
 		if(!isset($_GET['id']) OR empty($_GET['id']) OR !is_numeric($_GET['id'])) throw new Exception('The ID must be specified. Please go back and try again.');
 		
+		// searches variable film within the db and select the film from id
 		$film = $db->prepare('SELECT * FROM film WHERE id = ?');
 		$film->execute([$_GET['id']]);
 		$films=$film->fetchObject('film');
-			
+		
+		// searches variable review within the db and select the film from film id	
 		$reviews = $db->prepare('SELECT * FROM review WHERE film_id = ? LIMIT 10');
 		$reviews->execute([$films->id]);
 		
 		?>
 		
 		<div class="col-md-12">
-			
+		
 			<div class="row">
 			<div class="row">
 				<div class="col-md-12">
@@ -75,7 +77,10 @@ require('classes/review.class.php');
 					<h5>Classification:</h5>
 						<h5><?=$films->classification?></h5>
 			</div>			
-
+			<div class="col-md-4">		
+					<h5>IMBD Rating:</h5>
+						<h5><?=$films->imdb_id?></h5>
+			</div>	
 				
 				
 				<h3>Current Reviews</h3>
@@ -101,14 +106,14 @@ require('classes/review.class.php');
 									<?php if($review->liked)
 									{
 									?>
-									<img src="img/nut.png" />
+									<img src="img/thumbsup.gif"/>
 									
 									<?php } ?>
 									
 									<?php if(!$review->liked)
 									{
 									?>
-									<img src="img/superman.jpg" />
+									<img src="img/thumbsdown.gif" />
 									
 									<?php } ?>
 							</tr>
@@ -125,8 +130,6 @@ require('classes/review.class.php');
 		
 		<div class="col-md-12">
 			<h3>Submit a Review!</h3>
-	
-
 			<form role="form" action="process-reviews.php" method="post" class="col-md-12">
 				<div class="form-group">
 					<label for="ReviewerName">Name:</label>

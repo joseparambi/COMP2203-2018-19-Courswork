@@ -1,4 +1,18 @@
 <?php
+
+/**
+ * This code shows the process reviews php file which has the files in order to call the reviews and be able to process them
+ *
+ * displays the lists of reviews which are available to use when calling the process reviews file in order to sync this with the reviews class file
+ *
+ * class process reviews
+ *
+ * @author Jose Parambi
+ */
+ 
+ 
+ // loads the relevant required files
+ 
 require_once('includes/predispatch.php');
 require('includes/db.php');
 require_once('classes/actor.class.php');
